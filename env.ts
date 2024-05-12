@@ -3,7 +3,6 @@ import { z } from "zod";
 const envVariables = z.object({
   NEXT_PUBLIC_SUPABASE_URL: z.string(),
   NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string(),
-  DATABASE_URL: z.string(),
 });
 
 // This will throw an error if the environment variables are not set
