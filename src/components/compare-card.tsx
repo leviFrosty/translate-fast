@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/shadcn";
 import { VariantProps, cva } from "class-variance-authority";
 import React, { BaseHTMLAttributes } from "react";
 

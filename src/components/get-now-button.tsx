@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { VariantProps } from "class-variance-authority";
 import Link from "next/link";
 
 export interface GetNowButtonProps
