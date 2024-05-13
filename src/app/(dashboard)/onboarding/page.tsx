@@ -1,11 +1,23 @@
-import ProviderForm from "@/components/onboarding/provider-form";
+import OnboardingSteps from "@/components/onboarding/onboarding";
 import Title from "@/components/ui/title";
+import { createClient } from "@/lib/supabase/server";
+import { redirect } from "next/navigation";
 
-export default function Onboarding() {
+export default async function Onboarding() {
+  const supabase = createClient();
+
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (!user) {
+    return redirect("/login");
+  }
+
   return (
-    <div className="flex flex-col gap-8 py-16">
-      <Title>Get Started</Title>
-      <ProviderForm />
+    <div className="flex w-full max-w-screen-sm flex-col gap-4 py-16">
+      <Title>Onboarding</Title>
+      <OnboardingSteps />
     </div>
   );
 }
