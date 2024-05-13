@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 export default function Footer() {
   return (
     <footer className="flex justify-center py-20 bg-neutral-950">
-      <div className="flex gap-8 max-w-xl p-18 max-md:flex-col max-md:px-4">
+      <div className="flex gap-8 max-w-xl p-18 max-md:flex-col px-2">
         <div className="flex flex-col gap-2">
           <Link className="flex gap-2 items-center" href="/">
             <Image src="/icon.png" alt="" width={24} height={24} />
@@ -18,7 +18,7 @@ export default function Footer() {
           </p>
           <p className="text-xs">Copyright © 2024 - All rights reserved</p>
         </div>
-        <div className="flex gap-14 max-sm:gap-4 max-md:mx-auto">
+        <div className="flex gap-14 max-md:gap-8">
           <div>
             <h5 className="font-semibold uppercase text-neutral-400 px-4">
               Links

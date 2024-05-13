@@ -29,10 +29,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth dark">
+    <html lang="en" className="dark scroll-smooth">
       <body className={cn("bg-neutral-900", fontSans.variable)}>
         <Header />
-        <main className="min-h-screen flex flex-col items-center">
+        <main className="flex min-h-screen flex-col items-center gap-36 px-2">
           {children}
         </main>
         <Footer />
