@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en" className="dark scroll-smooth">
       <body className={cn("bg-neutral-900", fontSans.variable)}>
         <Header />
-        <main className="flex min-h-screen flex-col items-center gap-36 px-2">
+        <main className="flex min-h-screen flex-col items-center gap-36 px-8">
           {children}
         </main>
         <Footer />

@@ -10,7 +10,7 @@ export default function Pricing() {
           Get translated in{" "}
           <span className="relative">
             <span className="text-white after:absolute after:left-0 after:top-0 after:-z-[1] after:h-full after:w-full after:-rotate-1 after:bg-indigo-500 after:content-[''] ">
-              one minute
+              minutes
             </span>
           </span>
         </h2>
