@@ -9,7 +9,7 @@ export default function NavLinks(props: { closeSheet?: () => void }) {
   return (
     <>
       <Link
-        href="#pricing"
+        href="/#pricing"
         onClick={() => {
           router.push("#pricing");
           props.closeSheet?.();
@@ -19,12 +19,12 @@ export default function NavLinks(props: { closeSheet?: () => void }) {
           Pricing
         </Button>
       </Link>
-      <Link href="#demo" onClick={props.closeSheet}>
+      <Link href="/#demo" onClick={props.closeSheet}>
         <Button variant="ghost" className="w-full">
           Demo
         </Button>
       </Link>
-      <Link href="#faq" onClick={props.closeSheet}>
+      <Link href="/#faq" onClick={props.closeSheet}>
         <Button variant="ghost" className="w-full">
           FAQ
         </Button>

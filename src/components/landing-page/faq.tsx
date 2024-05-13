@@ -7,7 +7,7 @@ import {
 
 export default function FAQ() {
   return (
-    <section className="flex flex-col items-center gap-10">
+    <section className="flex flex-col items-center gap-10" id="faq">
       <h2 id="faq" className="text-center text-4xl font-bold">
         Frequently Asked Questions
       </h2>
