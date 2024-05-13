@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="flex justify-center py-32 max-lg:pt-24 md:py-16">
+    <section className="flex justify-center py-8 max-lg:pt-24  md:py-16 lg:py-32">
       <div className="flex w-full max-w-screen-lg gap-6 max-lg:flex-col">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-2">
