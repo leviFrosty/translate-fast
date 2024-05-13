@@ -1,13 +1,8 @@
 "use server";
 import { redirect } from "next/navigation";
-import { z } from "zod";
 import { createClient } from "./server";
 import { headers } from "next/headers";
-
-const loginSchema = z.object({
-  email: z.string().email(),
-  password: z.string().min(8),
-});
+import { loginSchema } from "./loginSchema";
 
 function validateLoginData(unsafeData: unknown) {
   const { data, error } = loginSchema.safeParse(unsafeData);

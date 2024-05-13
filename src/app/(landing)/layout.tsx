@@ -1,5 +1,5 @@
-import "../styles/globals.css";
-import "../../env";
+import "../../styles/globals.css";
+import "../../../env";
 import { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";

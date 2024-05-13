@@ -14,6 +14,13 @@ export default async function ProtectedPage() {
     return redirect("/login");
   }
 
+  /**
+   * If the user isn't completed with onboarding, redirect to the onboarding page
+   */
+  if (true) {
+    return redirect("/onboarding");
+  }
+
   return (
     <div className="flex w-full flex-1 flex-col items-center gap-20">
       <div className="w-full">
