@@ -19,66 +19,74 @@ export default function Footer() {
           <p className="text-xs">Copyright © 2024 - All rights reserved</p>
         </div>
         <div className="flex gap-14 max-md:gap-8">
-          <div>
-            <h5 className="px-4 font-semibold uppercase text-neutral-400">
-              Links
-            </h5>
-            <ul>
-              <li>
-                <Button variant="link">
-                  <Link href="mailto:support@leviwilkerson.com">Support</Link>
-                </Button>
-              </li>
-              <li>
-                <Button variant="link">
-                  <Link href="#pricing">Pricing</Link>
-                </Button>
-              </li>
-              <li>
-                <Button variant="link">
-                  <Link href="/login">Login</Link>
-                </Button>
-              </li>
-              <li>
-                <Button variant="link">
-                  <Link href="#pricing" className="text-nowrap">
-                    Buy Now
-                  </Link>
-                </Button>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h5 className="px-4 font-semibold uppercase text-neutral-400">
-              Legal
-            </h5>
-            <ul className="flex flex-col justify-start">
-              <li>
-                <Button variant="link">
-                  <Link href="mailto:support@leviwilkerson.com">Support</Link>
-                </Button>
-              </li>
-              <li>
-                <Button variant="link">
-                  <Link href="#pricing">Pricing</Link>
-                </Button>
-              </li>
-              <li>
-                <Button variant="link">
-                  <Link href="/login">Login</Link>
-                </Button>
-              </li>
-              <li>
-                <Button variant="link">
-                  <Link href="#pricing" className="text-nowrap">
-                    Buy Now
-                  </Link>
-                </Button>
-              </li>
-            </ul>
-          </div>
+          <ColumnOne />
+          <ColumnTwo />
         </div>
       </div>
     </footer>
+  );
+}
+
+function ColumnOne() {
+  return (
+    <div>
+      <h5 className="px-4 font-semibold uppercase text-neutral-400">Links</h5>
+      <ul>
+        <li>
+          <Button variant="link">
+            <Link href="mailto:support@leviwilkerson.com">Support</Link>
+          </Button>
+        </li>
+        <li>
+          <Button variant="link">
+            <Link href="#pricing">Pricing</Link>
+          </Button>
+        </li>
+        <li>
+          <Button variant="link">
+            <Link href="/login">Login</Link>
+          </Button>
+        </li>
+        <li>
+          <Button variant="link">
+            <Link href="#pricing" className="text-nowrap">
+              Buy Now
+            </Link>
+          </Button>
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+function ColumnTwo() {
+  return (
+    <div>
+      <h5 className="px-4 font-semibold uppercase text-neutral-400">Legal</h5>
+      <ul className="flex flex-col justify-start">
+        <li>
+          <Button variant="link">
+            <Link href="mailto:support@leviwilkerson.com">Support</Link>
+          </Button>
+        </li>
+        <li>
+          <Button variant="link">
+            <Link href="#pricing">Pricing</Link>
+          </Button>
+        </li>
+        <li>
+          <Button variant="link">
+            <Link href="/login">Login</Link>
+          </Button>
+        </li>
+        <li>
+          <Button variant="link">
+            <Link href="#pricing" className="text-nowrap">
+              Buy Now
+            </Link>
+          </Button>
+        </li>
+      </ul>
+    </div>
   );
 }

@@ -1,9 +1,12 @@
 import Link from "next/link";
 import { SubmitButton } from "./submit-button";
-import { PageProps } from "../../../.next/types/app/layout";
 import { signIn, signUp } from "@/lib/supabase/signIn";
 
-export default function Login({ searchParams }: PageProps) {
+export default function Login({
+  searchParams,
+}: {
+  searchParams: { message: string };
+}) {
   return (
     <div className="flex w-full flex-1 flex-col justify-center gap-2 px-8 sm:max-w-md">
       <Link
