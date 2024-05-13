@@ -4,6 +4,8 @@ import { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/shadcn";
 import { withCompanyName } from "@/lib/metadata";
+import Header from "@/components/landing-page/header";
+import Footer from "@/components/landing-page/footer";
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -29,9 +31,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth dark">
       <body className={cn("bg-neutral-900", fontSans.variable)}>
+        <Header />
         <main className="min-h-screen flex flex-col items-center">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );

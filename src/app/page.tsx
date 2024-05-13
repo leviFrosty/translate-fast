@@ -1,10 +1,10 @@
-import GetNowButton from "@/components/get-now-button";
+import GetNowButton from "@/components/landing-page/get-now-button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faGift, faStar } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import CompareCard from "@/components/compare-card";
-import UserReview from "@/components/user-review";
+import CompareCard from "@/components/landing-page/compare-card";
+import UserReview from "@/components/landing-page/user-review";
 import {
   Accordion,
   AccordionContent,
