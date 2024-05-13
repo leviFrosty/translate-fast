@@ -6,7 +6,7 @@ import NavLinks from "./nav-links";
 export default function Header() {
   return (
     <header className="flex justify-center">
-      <div className="flex w-full max-w-screen-lg items-center justify-between p-8 max-lg:p-4">
+      <div className="flex w-full max-w-screen-lg items-center justify-between py-2 max-lg:p-4">
         <Link className="flex items-center gap-2" href="/">
           <Image src="/icon.png" alt="" width={24} height={24} />
           <p className="font-black">TranslateFast</p>

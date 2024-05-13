@@ -4,7 +4,7 @@ import GetNowButton from "../get-now-button";
 
 export default function Pricing() {
   return (
-    <section className="flex w-full justify-center">
+    <section className="flex w-full justify-center lg:pb-32">
       <div className="flex w-full max-w-screen-lg flex-col gap-4">
         <h2 id="pricing" className="text-4xl font-bold">
           Get translated in{" "}
