@@ -13,9 +13,9 @@ interface CompareCardProps extends BaseHTMLAttributes<HTMLDivElement> {
 const UserReview = React.forwardRef<HTMLDivElement, CompareCardProps>(
   ({ title, name, message, image }, ref) => {
     return (
-      <div className="flex flex-col items-center max-w-80 gap-4" ref={ref}>
+      <div className="flex max-w-80 flex-col items-center gap-4" ref={ref}>
         <div className="block">
-          <div className=" flex gap-[2px] text-amber-500 h-4 fit">
+          <div className=" fit flex h-4 gap-[2px] text-amber-500">
             <FontAwesomeIcon icon={faStar} />
             <FontAwesomeIcon icon={faStar} />
             <FontAwesomeIcon icon={faStar} />
@@ -23,22 +23,22 @@ const UserReview = React.forwardRef<HTMLDivElement, CompareCardProps>(
             <FontAwesomeIcon icon={faStar} />
           </div>
         </div>
-        <div className="flex flex-col gap-2 items-center">
+        <div className="flex flex-col items-center gap-2">
           <p className="text-center">{message}</p>
-          <div className="flex gap-4 items-center">
+          <div className="flex items-center gap-4">
             <Avatar className="bg-neutral-200">
               <AvatarImage src={image} />
               <AvatarFallback>{name.slice(0, 2).toUpperCase()}</AvatarFallback>
             </Avatar>
             <div className="flex flex-col">
-              <p className="font-semibold text-lg">{name}</p>
+              <p className="text-lg font-semibold">{name}</p>
               <span className="text-neutral-400">{title}</span>
             </div>
           </div>
         </div>
       </div>
     );
-  }
+  },
 );
 
 UserReview.displayName = "CompareCard";

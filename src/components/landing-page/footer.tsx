@@ -4,10 +4,10 @@ import { Button } from "../ui/button";
 
 export default function Footer() {
   return (
-    <footer className="flex justify-center py-20 bg-neutral-950">
-      <div className="flex gap-8 max-w-xl p-18 max-md:flex-col px-2">
+    <footer className="flex justify-center bg-neutral-950 py-20">
+      <div className="p-18 flex max-w-xl gap-8 px-2 max-md:flex-col">
         <div className="flex flex-col gap-2">
-          <Link className="flex gap-2 items-center" href="/">
+          <Link className="flex items-center gap-2" href="/">
             <Image src="/icon.png" alt="" width={24} height={24} />
             <p className="font-black">TranslateFast</p>
           </Link>
@@ -20,7 +20,7 @@ export default function Footer() {
         </div>
         <div className="flex gap-14 max-md:gap-8">
           <div>
-            <h5 className="font-semibold uppercase text-neutral-400 px-4">
+            <h5 className="px-4 font-semibold uppercase text-neutral-400">
               Links
             </h5>
             <ul>
@@ -49,7 +49,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h5 className="font-semibold uppercase text-neutral-400 px-4">
+            <h5 className="px-4 font-semibold uppercase text-neutral-400">
               Legal
             </h5>
             <ul className="flex flex-col justify-start">

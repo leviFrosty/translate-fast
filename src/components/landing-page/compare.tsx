@@ -5,10 +5,10 @@ export default function Compare() {
   return (
     <section className="flex flex-col items-center gap-10">
       <div>
-        <h2 className="text-4xl font-bold text-center">
+        <h2 className="text-center text-4xl font-bold">
           Tired of Manually Translating Release Notes?
         </h2>
-        <div className="flex max-lg:flex-col gap-4 py-8 max-w-screen-lg mx-auto">
+        <div className="mx-auto flex max-w-screen-lg gap-4 py-8 max-lg:flex-col">
           <CompareCard
             title="Translations without TranslateFast"
             variant="negative"

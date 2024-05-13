@@ -1,4 +1,4 @@
-import { cn } from "@/lib/shadcn";
+import { cn } from "@/lib/utils";
 import { VariantProps, cva } from "class-variance-authority";
 import React, { BaseHTMLAttributes } from "react";
 
@@ -25,11 +25,11 @@ const CompareCard = React.forwardRef<HTMLDivElement, CompareCardProps>(
   ({ title, variant, className, children }, ref) => {
     return (
       <div className={cn(compareVariants({ className, variant }))} ref={ref}>
-        <h3 className="font-bold text-lg pb-1">{title}</h3>
+        <h3 className="pb-1 text-lg font-bold">{title}</h3>
         {children}
       </div>
     );
-  }
+  },
 );
 
 CompareCard.displayName = "CompareCard";

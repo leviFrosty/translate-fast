@@ -4,8 +4,8 @@ import GetNowButton from "../get-now-button";
 export default function FeatureTwo() {
   return (
     <section className="flex justify-center">
-      <div className="flex gap-4 max-w-screen-lg max-md:flex-col">
-        <div className="flex w-full rounded-lg overflow-hidden">
+      <div className="flex max-w-screen-lg gap-4 max-md:flex-col">
+        <div className="flex w-full overflow-hidden rounded-lg">
           <Image
             src={"https://picsum.photos/800/500"}
             alt=""
@@ -15,7 +15,7 @@ export default function FeatureTwo() {
           />
         </div>
         <div className="flex w-full flex-col gap-4">
-          <h2 className="text-4xl font-bold pb-4">Lorem Ipsum</h2>
+          <h2 className="pb-4 text-4xl font-bold">Lorem Ipsum</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
             consequatur.

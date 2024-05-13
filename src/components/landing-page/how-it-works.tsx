@@ -9,10 +9,10 @@ import {
 export default function HowItWorks() {
   return (
     <section className="flex justify-center">
-      <div className="flex gap-4 max-w-screen-lg max-md:flex-col">
+      <div className="flex max-w-screen-lg gap-4 max-md:flex-col">
         <div>
-          <h2 className="text-4xl font-bold pb-4">How it Works</h2>
-          <div className="flex max-w-screen-lg max-md:flex-col gap-4">
+          <h2 className="pb-4 text-4xl font-bold">How it Works</h2>
+          <div className="flex max-w-screen-lg gap-4 max-md:flex-col">
             <div className="flex w-full">
               <Accordion type="single" defaultValue="item-1">
                 <AccordionItem value="item-1">

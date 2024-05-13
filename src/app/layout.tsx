@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import "../../env";
 import { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
-import { cn } from "@/lib/shadcn";
+import { cn } from "@/lib/utils";
 import { withCompanyName } from "@/lib/metadata";
 import Header from "@/components/landing-page/header";
 import Footer from "@/components/landing-page/footer";
